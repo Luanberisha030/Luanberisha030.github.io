@@ -1,0 +1,241 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0a08"><title>Trattoria Gioachino | Karte</title><style>
+:root{
+  --bg:#0b0a08;
+  --panel:#073a2e;
+  --panel-dark:#052d24;
+  --gold:#d4a34f;
+  --gold2:#f2c878;
+  --cream:#f5e6c9;
+  --muted:#d8c9b1;
+  --red:#9e2c2c;
+  --red-dark:#651919;
+  --green:#244a2a;
+  --green-bright:#148047;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--cream);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.35;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 18% 18%,rgba(242,200,120,.10),transparent 22%),
+    radial-gradient(circle at 82% 24%,rgba(242,200,120,.08),transparent 20%),
+    radial-gradient(circle at 14% 80%,rgba(158,44,44,.10),transparent 18%),
+    linear-gradient(180deg,#0d0b08 0%,#0a0907 100%);
+}
+.top{
+  position:sticky;top:0;z-index:20;
+  background:rgba(7,7,5,.96);
+  border-bottom:1px solid rgba(212,163,79,.55);
+  box-shadow:0 6px 20px rgba(0,0,0,.28);
+  backdrop-filter:blur(10px);
+}
+.topin{
+  max-width:820px;margin:auto;padding:11px 12px;
+  display:flex;align-items:center;gap:11px;
+}
+.back{
+  color:var(--gold2);text-decoration:none;
+  border:1.5px solid var(--gold);border-radius:999px;
+  padding:10px 13px;font-size:14px;font-weight:700;white-space:nowrap;
+  background:#11100d;
+}
+.brand strong{
+  display:block;color:var(--gold2);
+  font-size:16px;letter-spacing:1.5px
+}
+.brand span{
+  display:block;color:var(--muted);
+  font-size:11px;letter-spacing:1px
+}
+.hero{
+  max-width:820px;margin:auto;padding:27px 16px 12px;text-align:center
+}
+.hero .mini{
+  letter-spacing:4px;color:var(--gold2);font-size:13px
+}
+.hero h1{
+  margin:5px 0 4px;color:var(--gold2);
+  font-size:clamp(36px,9vw,58px);line-height:1
+}
+.hero p{
+  margin:9px 0 2px;color:var(--muted);font-size:16px
+}
+
+/* Größere, auffällige Barzahlung-/Selbstbedienung-Leiste */
+.notice{
+  max-width:820px;
+  margin:13px auto 15px;
+  padding:0 12px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.notice div{
+  min-height:92px;
+  border:2px solid var(--gold);
+  border-radius:14px;
+  padding:15px 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  box-shadow:0 12px 26px rgba(0,0,0,.28), inset 0 0 0 1px rgba(242,200,120,.13);
+}
+.notice strong{
+  display:block;
+  font-size:clamp(19px,3.2vw,24px);
+  line-height:1.05;
+  letter-spacing:.8px;
+  color:#fff7e8;
+}
+.notice span{
+  display:block;
+  margin-top:6px;
+  font-size:14px;
+  line-height:1.25;
+  color:#f4dfc5;
+}
+.notice .cash{
+  background:linear-gradient(180deg,#7a1717,var(--red-dark));
+}
+.notice .cash strong::before{
+  content:"€  ";
+  color:var(--gold2);
+}
+.notice .self{
+  background:linear-gradient(180deg,#244a2a,#17381f);
+}
+.notice .self strong::before{
+  content:"☝  ";
+  color:var(--gold2);
+}
+
+.nav{
+  max-width:820px;margin:auto;padding:9px 12px 15px;
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none
+}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--cream);
+  background:linear-gradient(180deg,#073a2e,#052d24);
+  border:1px solid var(--gold);
+  border-radius:999px;padding:10px 14px;
+  font-size:14px;font-weight:700
+}
+main{max-width:820px;margin:auto;padding:0 12px 48px}
+.section{
+  scroll-margin-top:105px;
+  margin:14px 0 22px;
+  border:2px solid rgba(212,163,79,.55);
+  border-radius:16px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#073a2e 0%,#052d24 100%);
+  box-shadow:0 14px 30px rgba(0,0,0,.27), inset 0 0 0 1px rgba(242,200,120,.10);
+}
+.head{
+  padding:17px 16px 13px;
+  background:linear-gradient(135deg,#0b4a3a,#073a2e);
+  border-bottom:1px solid rgba(212,163,79,.5)
+}
+.head h2{
+  margin:0;color:var(--gold2);font-size:27px;letter-spacing:.7px
+}
+.head p{
+  margin:4px 0 0;color:#f0dfc4;font-size:14px
+}
+.sub{
+  padding:14px 16px 8px;
+  color:var(--gold2);
+  font-size:17px;font-weight:700;letter-spacing:1px;
+  background:rgba(0,0,0,.14)
+}
+.item{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:14px;
+  align-items:start;
+  padding:14px 16px;
+  border-top:1px solid rgba(245,230,201,.13)
+}
+.name{
+  font-size:18px;font-weight:700;color:#fff8ea
+}
+.desc{
+  font-size:15px;color:var(--muted);margin-top:3px
+}
+.price{
+  font-size:18px;color:var(--gold2);font-weight:800;white-space:nowrap
+}
+.note{
+  padding:11px 16px;
+  color:#f0d5aa;
+  font-size:14px;
+  background:rgba(7,7,5,.42);
+  border-top:1px solid rgba(212,163,79,.32)
+}
+.pizzah,.pizzar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 60px 60px;
+  gap:7px;align-items:start
+}
+.pizzah{
+  padding:9px 16px;
+  color:var(--gold2);
+  font-size:13px;font-weight:800;
+  background:rgba(0,0,0,.12)
+}
+.pizzar{
+  padding:14px 16px;
+  border-top:1px solid rgba(245,230,201,.13)
+}
+.pizzar .name{font-size:17px}
+.pizzar .price{font-size:16px;text-align:right}
+.foot{
+  text-align:center;color:var(--gold2);
+  font-style:italic;padding:22px 10px 6px;font-size:24px
+}
+@media(max-width:520px){
+  .topin{padding:10px}
+  .hero{padding-top:22px}
+  .notice{grid-template-columns:1fr;gap:9px}
+  .notice div{min-height:88px;padding:14px 15px}
+  .notice strong{font-size:21px}
+  .notice span{font-size:14px}
+  .item{padding:15px 14px}
+  .name,.price{font-size:18px}
+  .desc{font-size:15px;line-height:1.4}
+  .pizzah,.pizzar{grid-template-columns:minmax(0,1fr) 58px 58px}
+  .pizzar{padding:15px 14px}
+  .head{padding:16px 14px 12px}
+  .head h2{font-size:25px}
+}
+</style></head><body><header class="top"><div class="topin"><a class="back" href="index.html">← Hauptmenü</a><div class="brand"><strong>TRATTORIA GIOACHINO</strong><span>BERLIN · GRUNEWALD</span></div></div></header><section class="hero"><div class="mini" id="mini"></div><h1 id="title"></h1><p>Einfach scrollen – kein Zoomen nötig.</p></section><section class="notice" aria-label="Wichtige Hinweise">
+  <div class="cash"><strong>NUR BARZAHLUNG</strong><span>Wir akzeptieren ausschließlich Bargeld</span></div>
+  <div class="self"><strong>SELBSTBEDIENUNG</strong><span>Bitte an der Theke bestellen &amp; bezahlen</span></div>
+</section><nav class="nav" id="nav"></nav><main id="content"></main><script>
+const food=[
+['ANTIPASTI','Kleine italienische Klassiker',[['Focaccia','', '3,50 €'],['Bruschetta Focaccia','', '8,00 €'],['Bruschetta','Tomaten-Bruschetta','6,00 €']]],
+['INSALATA','Frisch & leicht',[['Mista klein','Kleiner gemischter Salat','7,00 €'],['Mista groß','Großer gemischter Salat','8,00 €'],['Tonno','Gemischter Salat mit Thunfisch','10,00 €'],['Pecorino','Gemischter Salat mit Feta Käse','10,00 €'],['Caprese','Tomate, Mozzarella, Basilikum','10,00 €'],['Parma','Gemischter Salat mit Tipo Parmaschinken','12,00 €'],['Pollo','Gemischter Salat mit gebratenem Hähnchen & Pilzen','12,00 €'],['Vegetale','Gemischter Salat mit gebratenem Gemüse','12,00 €'],['Scampi','Gemischter Salat mit gebratenen Scampis & Knoblauch','13,00 €']]],
+['PASTA','Pasta mit italienischem Flair',{note:'Große Portion +2,00 € · Kleine Portion −2,00 €',groups:[['PASTA AGLIO',[['Aglio e Olio','Knoblauch, Chili','10,00 €'],['Vegetale','Gebratenes Gemüse','12,50 €'],['Scampi','Scampi, Weißwein','15,50 €'],['Pesto-Pesto','Haus gemachtes Basilikum Pesto','12,50 €']]],['PASTA POMODORO',[['Pomodoro','Tomatensoße','9,00 €'],['Arrabiata','Knoblauch, Chili','10,00 €'],['Mozzarella','Mozzarella, Basilikum','10,00 €'],['Bolognese','Rinderhackfleisch','10,00 €'],['Marinara','Meeresfrüchte','12,50 €'],['Al Tonno','Thunfisch, Kapern, Oliven','12,00 €'],['Scampi','Scampi, Knoblauch','15,50 €']]],['SALSA DI PANNA',[['Funghi','Champignons','10,00 €'],['Gorgonzola','Gorgonzola','11,00 €'],['Carbonara','Schinken','10,00 €'],['Pollo','Hühnchen','11,50 €'],['Rossini','Rindfleischspitzen','12,50 €']]]]}],
+['AL FORNO','Aus dem Ofen',[['Lasagne','Mit Rinderbolognese','11,00 €'],['Lasagne','Mit Gemüse','11,00 €'],['Penne al Forno','Mit Tomaten-Sahnesoße','10,00 €']]],
+['PIZZA','Knusprig & frisch aus dem Ofen',{pizza:true,groups:[['PIZZA A','26,00 €',[['Margherita','Mozzarella, Basilikum','9,50 €','11,50 €'],['Salami','Salami','10,00 €','12,00 €'],['Prosciutto','Schinken','10,00 €','12,00 €'],['Aglio','Knoblauch','10,00 €','12,00 €'],['Peperoni','Grüne Peperoni','10,00 €','12,00 €']]],['PIZZA B','28,00 €',[['Tonno','Thunfisch, Zwiebel','11,00 €','13,00 €'],['Sardelle','Sardelle, Kapern','11,00 €','13,00 €'],['Funghi','Champignons','11,00 €','13,00 €'],['Hawaii','Schinken, Ananas','11,00 €','13,00 €']]],['PIZZA C','31,00 €',[['Manzo','Rindersalami, Peperoni','12,50 €','14,50 €'],['Arrabiata','Scharfe Salami, Jalapeños','12,50 €','14,50 €'],['Mista','Salami, Schinken, Pilze, Peperoni','12,50 €','14,50 €'],['Capricciosa','Schinken, Pilze, Artischocke, Olive','12,50 €','14,50 €'],['Marinara','Meeresfrüchte, Knoblauch','12,50 €','14,50 €'],['Rucola','Rucola, Tomaten, Fetakäse','12,50 €','14,50 €'],['Vegetale','Gebratenes Gemüse','12,50 €','14,50 €']]],['PIZZA D','36,00 €',[['Parma','Rucola, Tipo-Parmaschinken, Parmesan','15,50 €','17,50 €'],['Scampi','Scampi, Knoblauch','15,50 €','17,50 €'],['Quattro Formaggi','Mozzarella, Fetakäse, Gorgonzola, Parmesan','15,50 €','17,50 €']]]],extra:[['Mini Pizza','','3,50 €']]}],
+['DESSERT','Dolce finale',[['Tartufo','','4,00 €']]]
+];
+const drinks=[
+['ACQUA & SOFTDRINKS','Erfrischend & alkoholfrei',[['Wasser still / sprudelnd','0,2 l','2,50 €'],['Wasser still / sprudelnd','0,75 l','4,50 €'],['Cola / Cola Zero / Fanta / Sprite','0,2 l','2,50 €'],['Cola / Cola Zero / Fanta / Sprite','0,4 l','4,00 €'],['Bionade','Verschiedene Sorten · 0,33 l','3,00 €'],['Spezi','0,33 l','3,00 €'],['Orangina Orange / Rouge','0,25 l','3,00 €'],['Fuze Tea Pfirsich / Zitrone','0,25 l','3,00 €'],['Granini Säfte','Verschiedene Sorten · 0,2 l','2,50 €'],['Apfelschorle','0,33 l','3,00 €'],['Rhabarberschorle','0,33 l','3,00 €'],['Schwarze Johannisbeerschorle','0,25 l','3,00 €']]],
+['BIRRA · BIER','Flasche & Berliner Kindl vom Fass',[['Berliner Kindl · vom Fass','0,3 l','3,50 €'],['Berliner Kindl · vom Fass','0,4 l','4,50 €'],['Berliner Kindl · vom Fass','0,5 l','5,50 €'],['Berliner Kindl','0,33 l','3,00 €'],['Berliner Kindl','0,5 l','3,50 €'],['Berliner Kindl Radler','0,5 l','3,50 €'],['Birra Moretti','0,33 l','3,50 €'],['Peroni','0,33 l','3,50 €'],['Allgäuer Büble','Mit / ohne Alkohol · 0,5 l','4,50 €'],['Schöfferhofer Weizen / Kristall','0,5 l','4,50 €'],['Malzbier','0,33 l','3,00 €']]],
+['VINI & PROSECCO','0,2 l pro Glas',[['Weißwein','0,2 l','5,00 €'],['Rotwein','0,2 l','5,00 €'],['Roséwein','0,2 l','5,00 €'],['Lambrusco','0,2 l','5,00 €'],["N'Zero Rotwein",'0,2 l','7,00 €'],['Weinschorle','0,2 l','4,50 €'],['Prosecco','0,2 l','7,00 €'],['Prosecco Piccolo · Flasche','0,2 l','7,00 €']]],
+['APERITIVI · SPRITZ','Italian aperitivo time',[['Aperol Spritz','','8,00 €'],['Campari Spritz','','8,00 €'],['Campari Orange','','8,00 €'],['Sarti Spritz','','8,00 €'],['Limoncello Spritz','','8,00 €']]],
+['CAFFÈ & CIOCCOLATA','Mit Eis +0,50 €',[['Espresso','','3,00 €'],['Doppelter Espresso','','4,00 €'],['Caffè Crema','','3,00 €'],['Cappuccino','','3,50 €'],['Latte Macchiato','','4,50 €'],['Milchkaffee','','4,50 €'],['Kakao','','4,50 €']]],
+['DIGESTIVI · SPIRITUOSEN','2 cl',[['Amaretto','2 cl','5,00 €'],['Grappa','2 cl','5,00 €'],['Sambuca','2 cl','5,00 €'],['Averna','2 cl','4,50 €'],['Ramazzotti','2 cl','5,00 €']]]
+];
+const type=new URLSearchParams(location.search).get('typ')==='getraenke'?'getraenke':'speisen';const data=type==='speisen'?food:drinks;document.getElementById('title').textContent=type==='speisen'?'Speisekarte':'Getränkekarte';document.getElementById('mini').textContent=type==='speisen'?'CUCINA ITALIANA CON PASSIONE':'BEVANDE · GETRÄNKE';const nav=document.getElementById('nav'),content=document.getElementById('content');
+function slug(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function row(x){return `<div class="item"><div><div class="name">${x[0]}</div>${x[1]?`<div class="desc">${x[1]}</div>`:''}</div><div class="price">${x[2]}</div></div>`}
+data.forEach(sec=>{const id=slug(sec[0]);nav.insertAdjacentHTML('beforeend',`<a href="#${id}">${sec[0].replace(' · ',' ')}</a>`);let body='';const d=sec[2];if(Array.isArray(d)){body=d.map(row).join('')}else if(d.pizza){for(const g of d.groups){body+=`<div class="sub">${g[0]}</div><div class="pizzah"><div></div><div>26 cm</div><div>32 cm</div></div>`;for(const x of g[2])body+=`<div class="pizzar"><div><div class="name">${x[0]}</div><div class="desc">${x[1]}</div></div><div class="price">${x[2]}</div><div class="price">${x[3]}</div></div>`;body+=`<div class="note">Piastra Pizza · ${g[1]} · 3 Sorten nach Wahl aus ${g[0]}</div>`}body+=d.extra.map(row).join('')}else{if(d.note)body+=`<div class="note">${d.note}</div>`;for(const g of d.groups){body+=`<div class="sub">${g[0]}</div>`+g[1].map(row).join('')}}content.insertAdjacentHTML('beforeend',`<section class="section" id="${id}"><div class="head"><h2>${sec[0]}</h2><p>${sec[1]}</p></div>${body}</section>`)});content.insertAdjacentHTML('beforeend','<div class="foot">Grazie e a presto! ♡</div>');
+</script></body></html>
